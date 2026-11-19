@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ChurchTools verbinden",
+        "description": "Verwende den Login-Token eines eigenen ChurchTools-Dienstbenutzers mit möglichst wenigen Rechten.",
+        "data": { "url": "ChurchTools-URL", "token": "Login-Token" }
+      },
+      "reauth_confirm": {
+        "title": "ChurchTools-Token abgelaufen",
+        "data": { "token": "Neuer Login-Token" }
+      }
+    },
+    "error": {
+      "invalid_url": "Das ist keine gültige URL.",
+      "invalid_auth": "ChurchTools hat den Token abgelehnt.",
+      "cannot_connect": "ChurchTools ist nicht erreichbar.",
+      "unknown": "Unerwarteter Fehler."
+    },
+    "abort": {
+      "already_configured": "Diese ChurchTools-Instanz ist bereits verbunden.",
+      "reauth_successful": "Token aktualisiert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Daten, die SmartChurch lesen darf",
+        "description": "Es werden nur die ausgewählten Daten abgerufen. Personen und Gruppen enthalten personenbezogene Daten und sind standardmäßig aus.",
+        "data": { "scopes": "Datenkategorien" }
+      }
+    }
+  },
+  "selector": {
+    "scopes": {
+      "options": {
+        "resources": "Räume und Ressourcen",
+        "bookings": "Buchungen",
+        "events": "Veranstaltungen",
+        "groups": "Gruppen (personenbezogen)",
+        "persons": "Personen (personenbezogen)"
+      }
+    }
+  }
+}
